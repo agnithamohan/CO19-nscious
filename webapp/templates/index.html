@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} SCORE {% endblock %}</h1>
+    {% for user in users %}
+    <a href="#">
+        <h2>{{ user['uid'] }}</h2>
+    </a>
+    <hr>
+{% endfor %}
+{% endblock %}
