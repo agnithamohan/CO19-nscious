@@ -1,11 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{% block title %} SCORE {% endblock %}</h1>
-    {% for user in users %}
-    <a href="#">
-        <h2>{{ user['uid'] }}</h2>
-    </a>
-    <hr>
-{% endfor %}
-{% endblock %}
+    <style>
+    p {
+      color: navy;
+      width: 900px;
+    }
+    </style>
+    <br>
+    <h3>CoNcious</h3>
+    <img src="{{url_for('static', filename='images/home.jpeg')}}" />
+    <br>
+    <p>CoNscious assigngs a covid consciousness score to all it's users making it easier and safer to make plans during the pandemic.
+        </p>
+{% endblock %} 
