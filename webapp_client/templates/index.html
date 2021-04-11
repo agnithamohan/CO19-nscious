@@ -2,15 +2,34 @@
 
 {% block content %}
     <style>
-    p {
-      color: navy;
-      width: 900px;
+    h1 { 
+        color: palevioletred;
+        text-align: center;
     }
+
+    .imageContainer {
+        overflow: hidden;
+        width: 60%;
+        margin-left: 30%;
+        text-align: center;
+    }
+    .imageContainer > span {
+        display: block;
+        width: 100%;
+    }
+    .imageContainer > span > img {
+        display: block;
+        max-width:60%;
+        /* max-height:95px; */
+        width: auto;
+        height: auto;
+    }
+
     </style>
     <br>
-    <h3>CoNcious</h3>
-    <img src="{{url_for('static', filename='images/home.jpeg')}}" />
+    <div class="imageContainer">
+        <span><img src="{{url_for('static', filename='images/logo.png')}}" /></span>
+    </div>    
     <br>
-    <p>CoNscious assigngs a covid consciousness score to all it's users making it easier and safer to make plans during the pandemic.
-        </p>
+    <h1>Welcome!</h1>=
 {% endblock %} 

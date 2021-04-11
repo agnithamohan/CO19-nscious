@@ -1,5 +1,8 @@
 
 import math
+
+from user import User
+
 list_of_users = []
 test_loc = []
 test_score = []
@@ -111,8 +114,8 @@ def get_crowd_metric(box_number):
     surrounding_boxes.append(box_6)
     surrounding_boxes.append(box_7)
     surrounding_boxes.append(box_8)
-    sum_people = 0.1
-    sum_score = 0
+    sum_people = 0.0
+    sum_score = 0.0
     # print("ddd")
     # print(box_1)
     # print(box_2)
@@ -130,7 +133,8 @@ def get_crowd_metric(box_number):
         sum_people += n 
         sum_score += s 
 
-    return sum_people, sum_score/sum_people
+    avg = 100 if sum_people == 0 else sum_score/sum_people
+    return sum_people, avg
 
 
 location = (0,2)

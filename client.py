@@ -1,4 +1,3 @@
-
 import geocoder
 MAP_WIDTH = 1000
 MAP_HEIGHT = 1000
