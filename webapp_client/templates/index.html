@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <style>
+    p {
+      color: navy;
+      width: 900px;
+    }
+    </style>
+    <br>
+    <h3>CoNcious</h3>
+    <img src="{{url_for('static', filename='images/home.jpeg')}}" />
+    <br>
+    <p>CoNscious assigngs a covid consciousness score to all it's users making it easier and safer to make plans during the pandemic.
+        </p>
+{% endblock %} 

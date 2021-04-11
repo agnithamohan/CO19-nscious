@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action = "{{url_for('signup')}}" method = "post">
+   
+    <p>username</p>
+    <input type="text" name="username" placeholder="username">
+   
+    <input type="submit" name="" value="Sign Up">
+   
+
+</form>
+{% endblock %}
